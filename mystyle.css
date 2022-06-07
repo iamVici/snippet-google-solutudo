@@ -1,0 +1,153 @@
+
+html,body{
+    height: 100% !important;
+    width: 100% !important;
+}
+
+body{
+    background-color: #fff;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    display: block;
+}
+
+/* Blocos */
+
+.container{
+    margin-right: auto;
+    margin-left: auto;
+    width: 800px;
+    margin-top: 150px;
+}
+
+.bg{
+    background-color: #fff;
+    box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.20);
+    border-radius: 6px;
+    width: 620px;
+}
+
+.bg-description{
+    padding: 45px;
+    margin: 60px 0 40px 100px;
+}
+
+.bg-search{
+    padding: 24px;
+    height: auto;
+    position: absolute;
+    margin: -50px 0 0 50px;
+    align-items: center;
+    vertical-align: middle;
+    display: flex;
+}
+
+/* Textos & Elementos */
+.txtgoogle-url{
+    color: #5b5b5b;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 2px 0;
+}
+
+.txtgoogle-namepage{
+    color: #1705b0;
+    font-weight: 700;   
+    font-size: 24px;
+    margin: 0 0;
+}
+
+.txtgoogle-description{
+    color: #5b5b5b;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0 0 14px 0;
+}
+
+.txtgoogle-ratting{
+    color: #5b5b5b;
+    font-weight: 500;
+    font-size: 18px;
+    display: inline-block;
+    margin: 0 0;
+}
+
+.txtgoogle-search{
+    color: #5b5b5b;
+    font-weight: 700;
+    font-size: 18px;
+    margin: 0 0;    
+}
+
+.google-divisor{
+    height: 20px;
+    border-right: 2px solid rgba(0, 0, 0, 0.2);
+    padding-right: 10px;
+}
+
+.google-icon{
+    margin: 0 4px -5px 4px;
+}
+
+.google-logo{
+    margin-bottom: -5px; 
+    margin-right: 20px;
+}
+
+.google-mobile-divisor{
+    margin: 10px 0 20px 0;
+}
+
+/* Responsividade */
+@media screen and (max-width: 770px) {
+    /*Blocos */
+    .bg{
+        width: 520px;
+    }
+    .bg-search-mobile{
+        height: auto;
+        align-items: center;
+        vertical-align: middle;
+        display: flex;
+    }
+    .bg-search{
+        display: none;
+    }
+    .bg-description{
+        padding: 45px;
+        margin: 30px 30px 30px 30px;
+    }
+    
+    /* Textos & Elementos */
+    .txtgoogle-url{
+        font-size: 14px;
+    }
+    .txtgoogle-namepage{  
+        font-size: 20px;
+    }
+    .txtgoogle-description{
+        font-size: 15px;
+    }
+    .txtgoogle-ratting{
+        font-size: 16px;
+    }
+    .txtgoogle-search{
+        font-size: 15px;   
+    }
+    .google-icon{
+        height: 18px !important;
+    }
+    .google-star{
+        height: 16px !important;
+    }
+}
+
+@media screen and (min-width: 770px) {
+    .bg-search-mobile{
+        display: none;
+    }
+    .google-mobile-divisor{
+        display: none;
+    }
+}
+
